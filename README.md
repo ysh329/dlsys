@@ -1,4 +1,4 @@
 # dlsys
 
-## Enable MathJax on GitHub
-This is a chrome plugin, click [here](https://chrome.google.com/webstore/detail/github-with-mathjax/ioemnmodlmafdkllaclgeombjnmnbima/related) to install `GitHub with MathJax`.
+Note: For better read mode, you can enable MathJax on Github using [GitHub with MathJax](https://chrome.google.com/webstore/detail/github-with-mathjax/ioemnmodlmafdkllaclgeombjnmnbima/related).
+
