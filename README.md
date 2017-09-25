@@ -6,4 +6,4 @@ Note: For better read mode, you can enable MathJax on Github using [GitHub with 
 
 ## Content
 
-- Lecture 1: Introduction to Deep Learning [[slides](http://dlsys.cs.washington.edu/pdf/lecture1.pdf)]
+- [Lecture 1: Introduction to Deep Learning](./lecture1) [[slides](http://dlsys.cs.washington.edu/pdf/lecture1.pdf)]
