@@ -30,7 +30,7 @@ $$
 
 Binomial logistic regression model is a classification model, represented using conditional probability $P(Y|X)$ and its format is parameterized logistic distribution. Here $X$'s range is real number and $y$'s value is either $0$ or $1$. We use supervised learning method to estimate parameters.
 
-Binomial logistic regression is following conditional probability distribution:
+Binomial logistic regression has following conditional probability distribution:
 
 $$
 P(Y=1|x）= \frac{e^{w \dot x + b}}{1 + e^{w \dot x + b}}
@@ -39,3 +39,60 @@ $$
 $$
 P(Y=0|x）= \frac{ 1 }{1 + e^{w \dot x + b}}
 $$
+
+$x \in {\Re}^{n}$ is input, $Y \in \{0,1\}$ is output, $w \in {\Re}^{n}$ and $b \in \Re$ both are parameters. $w$ is weight vector and $b$ is bias. $w \dot x$ is the inner product of $w$ and $x$.
+
+Given an example $x$, we can get $P(Y=1|x)$ and $P(Y=0|x)$ using formulas above. Logistic regression will compare two conditional probabilities and classify example $x$ as bigger probability class.
+
+For convenient, expand weight vector $w$ and $x$ as $w = (w^{(1)}, w^{(2)}, ..., w^{(n)}, b)^T$, $x = (x^{(1)}, x^{(2)}, ..., x^{(n)}, 1)^T$. Then logistic regression model is as below:
+
+$$
+P(Y=1|x) = \frac{e^{ w \dot x}}{ 1 + e^{(w \dot x)}}
+$$
+
+$$
+P(Y=0|x) = \frac{1}{1+e^{w \dot x}}
+$$
+
+### Objective
+
+According to specific model, we can use supervised learning method formulate the concrete problem with its model as an objective.
+
+$$
+L(w) = \sum_{i=1}^{n} l (y_{i}, \hat{y_{i}) + \lambda ||w||^2
+$$
+
+$l(y_{i}, \hat{y_{i}})$ in formula above is loss gap between predicted value (or label) and ground-truth label. The loss has many a format:
+
+1. 0-1 loss function
+$$
+L(Y, f(x)) = 
+$$
+2. quadratic loss function
+$$
+L(Y, f(X)) = (Y - f(X))^2
+$$
+3. absolute loss function
+$$
+L(Y, f(x)) = |Y - f(X)|
+$$
+4. logarithmic loss function or log-likelihood loss function
+$$
+L(Y, P(Y|X)) = -\log{P(Y|X)}
+$$
+
+Smaller the loss function value is, the better model is. Because both model input and output $(X,Y)$ are random variables, they obey joint distribution $P(X|Y)$. Thus, the expectation of loss function is:
+
+$$
+abc
+$$
+
+### Training
+
+$$
+w \leftarrow w - 
+$$
+
+Remember the parameters $w$ and $b$ are randomly initialized or with fixed value (zero or one etc).
+
+The solution procedure of objective is to find better parameters, step by step.
