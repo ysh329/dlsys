@@ -28,7 +28,7 @@ $$
 f(x) = {F}'(x) = \frac{e^{-(x-\mu)/\gamma}}{\gamma (1 + e^{-(x-\mu)/\gamma})^2}
 $$
 
-Binomial logistic regression model is a classification model, represented using conditional probability $P(Y|X)$ and its format is parameterized logistic distribution. Here $X$'s range is real number and $y$'s range is $0$ or $1$. We use supervised learning method to estimate parameters.
+Binomial logistic regression model is a classification model, represented using conditional probability $P(Y|X)$ and its format is parameterized logistic distribution. Here $X$'s range is real number and $y$'s value is either $0$ or $1$. We use supervised learning method to estimate parameters.
 
 Binomial logistic regression is following conditional probability distribution:
 
