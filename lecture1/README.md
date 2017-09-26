@@ -21,7 +21,7 @@ $\hat{y_{i}}$ represents an inference or predicted result for example $x_{i}$. T
 The format of formula calculating $\hat{y_{i}}$ is logistic regression model. Although its name contains 'regression', it's a classification model. Logistic regression model comes from logistic distribution: assuming $X$ is continuous random variable, $y$ obeys logistic distribution. That is, $X$ has distribution function $F(x)$ and density function $f(x)$ as below: 
 
 $$
-F(x) = P(X \leq x) = \frac{1}{1 + e^{-(x-\mu)/\gamma}} \\
+F(x) = P(X \leq x) = \frac{1}{1 + e^{-(x-\mu)/\gamma}} 
 
 f(x) = {F}'(x) = \frac{e^{-(x-\mu)/\gamma}}{\gamma (1 + e^{-(x-\mu)/\gamma})^2}
 $$
